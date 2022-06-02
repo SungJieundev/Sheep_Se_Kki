@@ -13,6 +13,7 @@ public class BulletMove : MonoBehaviour
     {
         dir = PlayerFire.Instance.MousePos - transform.position;
         dir.z = 0;
+        transform.rotation = Quaternion.identity;
         transform.DORotate(new Vector3(0f,0f,360f), duration, RotateMode.FastBeyond360).SetLoops(-1).SetEase(Ease.Linear);
     }
 

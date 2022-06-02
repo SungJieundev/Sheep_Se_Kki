@@ -12,9 +12,9 @@ public class SheepMove : MonoBehaviour
     private Rigidbody2D rb2d = null;
     private Collider2D col2d = null;
 
-    private void OnEnable()
+    private void OnEnable() //활성화 될 때마다 호출 
     {
-        jumpPower = Random.Range(minJumpPower, maxJumpPower);
+        jumpPower = Random.Range(minJumpPower, maxJumpPower);//minJumpPower, maxJumpPower 사이의 랜덤한 값을 jumpPower로 정의
     }
 
     private void Start()

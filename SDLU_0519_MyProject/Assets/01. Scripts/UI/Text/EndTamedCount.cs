@@ -14,7 +14,7 @@ public class EndTamedCount : MonoBehaviour
 
     private void TextCount()
     {
-        countText.text = $"X {PlayerPrefs.GetInt("TamedCount"),0}";
+        countText.text = $" X {PlayerPrefs.GetInt("TamedCount"),0}";
     }
 
     
