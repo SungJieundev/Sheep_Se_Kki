@@ -21,7 +21,7 @@ public class TimeOver : MonoBehaviour
     {
         while (true)
         {
-            if(GameManager.Instance.currentTime >= 180)
+            if(GameManager.Instance.currentTime >= 180 || Input.GetKeyDown(KeyCode.T))
             {
                 fadeCanvas.SetActive(true);
                 fadeIamge.DOFade(1f, 1.5f).OnComplete(() =>
